@@ -1,0 +1,93 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+
+body,
+h2,
+p {
+    margin: 0;
+}
+
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 50px;
+}
+
+li {
+    margin-top: 15px;
+}
+
+p,
+ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main-doc {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.nav-container {
+    position: relative;
+    min-width: 300px;
+    border-right: 2px solid gray;
+}
+
+.nav {
+    position: sticky;
+    top: 0px;
+}
+
+.nav-header-container {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link-container {
+    padding: 10px 30px;
+    border-top: 1px solid gray;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.article-container {
+    padding-left: 30px;
+}
+
+.examples {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: hsl(0, 0%, 90%);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
